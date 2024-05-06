@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #cb3730;
+  --secondary-color: #f6d15f;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: "Red Hat Display";
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.ad {
+  display: flex;
+  padding: 60px 20px;
+  gap: 50px;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  color: var(--secondary-color);
+  border: 4px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  background-image: url(background-bobby-tarantino-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: luminosity;
+}
+
+.ad-content {
+  flex-grow: 1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+p {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 20px;
+}
+
+.card-hover {
+  padding: 100px 200px;
+  transition: transform 0.5s;
+}
+
+.card-hover:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  display: block;
+  width: 350px;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  transform: rotate(5deg);
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  animation: zoomInDown 1s ease-in-out, float 3s 1s ease-in-out infinite;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  font-size: 25px;
+}
+
+.button:hover {
+  background-color: transparent;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: rotate(5deg) translateY(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: rotate(6deg) translateY(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: rotate(5deg) translateY(0px);
+  }
+}
