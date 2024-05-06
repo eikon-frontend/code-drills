@@ -8,6 +8,8 @@
 }
 
 body {
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: var(--primary-color);
   font-family: "Red Hat Display";
   display: flex;
