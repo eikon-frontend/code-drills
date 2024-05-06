@@ -39,6 +39,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2px;
+  padding: 30px;
 }
 
 img {
@@ -51,16 +52,20 @@ h1 {
   margin-bottom: 50px;
   font-size: 40px;
   font-weight: 500;
+  line-height: 1;
 }
 
 p {
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 10px 0;
   font-size: 20px;
 }
 
 .card-hover {
-  padding: 100px 200px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 100px 80px;
   transition: transform 0.5s;
 }
 
@@ -88,7 +93,7 @@ p {
   font-weight: bold;
   border: 1px solid transparent;
   transition: all 0.3s;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .button:hover {
