@@ -104,6 +104,7 @@ p {
   color: var(--secondary-color);
 }
 
+/* Animations prises de https://animate.style */
 @keyframes zoomInDown {
   0% {
     opacity: 0;
