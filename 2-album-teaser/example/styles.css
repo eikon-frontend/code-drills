@@ -86,8 +86,11 @@ p {
 }
 
 .button {
-  display: inline-block;
-  padding: 10px 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   text-decoration: none;
@@ -102,6 +105,8 @@ p {
   background-color: transparent;
   border-color: var(--secondary-color);
   color: var(--secondary-color);
+  gap: 20px;
+  letter-spacing: 4px;
 }
 
 /* Animations prises de https://animate.style */
